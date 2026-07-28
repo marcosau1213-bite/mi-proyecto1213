@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+</script>
+
+  <meta charset="UTF-8">
+  <title>Interfaz Inicial</title>
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Música global -->
+  <audio id="audioFondo" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sonido del gatito -->
+  <audio id="sonidoMiau">
+    <source src="miau.mp3" type="audio/mpeg">
+  </audio>
+</head>
+
+<body>
+
+  <!-- Escenario -->
+  <div id="escenario"></div>
+
+  <!-- Carta principal -->
+  <div class="carta">
+    <h1>Bienvenida</h1>
+    <p>Esta es tu interfaz principal,desde aqui puedes acceder a todas las salas.</p>
+
+    <br><br>
+    <button class="btn" id="btnCodigo">Introducir código</button>
+    <button id="btnSecreto" class="btn">➤ Abrir nota personal</button>
+  </div>
+
+  <!-- Sala Troll -->
+  <div id="pantallaTroll" class="sala">
+    <h2 id="mensajeTroll">¿Te esta gustando/te ha gustado?</h2>
+
+    <button class="btn" id="btnSi">Sí</button>
+    <button class="btn" id="btnNo">No</button>
+
+    <br><br>
+    <button class="btn" id="cerrarTroll">Regresar</button>
+  </div>
+
+  <!-- Minijuego -->
+  <div id="salaMinijuego" class="sala">
+    <h2>Minijuego de Globos</h2>
+
+    <p>Puntos: <span id="puntos">0</span></p>
+    <p id="mesActual">Mes: —</p>
+    <p id="anosPasados">Años: 0</p>
+
+    <div id="zonaJuego"></div>
+
+    <button class="btn" id="cerrarMinijuego">Regresar</button>
+  </div>
+
+  <!-- Sala secreta -->
+  <div id="salaSecreta" class="sala">
+    <h2 id="mensajeSecreto"></h2>
+    <button class="btn" id="cerrarSalaSecreta">Regresar</button>
+  </div>
+
+  <!-- Hoja secreta -->
+  <div id="salaHoja" class="sala">
+    <h2>Escribe tu mensaje bonito</h2>
+
+    <textarea id="mensajeBonito">Aquí puedes escribir tu mensaje bonito, Marcos.</textarea>
+
+    <br><br>
+    <button class="btn" id="cerrarSalaHoja">Regresar</button>
+  </div>
+
+  <!-- Sala puesta de sol -->
+  <div id="salaPuestaSol" class="sala">
+    <div id="cieloPuestaSol">
+      <div id="sol"></div>
+
+      <!-- Campo verde -->
+      <div id="campo"></div>
+
+      <!-- Imagen fresasMar -->
+      <img id="fresasMar" src="fresasMar.png" alt="Decoración">
+    </div>
+
+    <!-- Cantante Emilia Mernes -->
+    <img id="EmiliaM" src="EmiliaM.png" alt="Emilia Mernes">
+
+    <!-- Gatito bebé -->
+    <img id="Gatito" src="Gatito.png" alt="Gatito bebé">
+
+    <!-- Mensaje poético -->
+    <div id="mensajePoetico">
+      Tendrás que reiniciar,<br>
+      como otro día.
+    </div>
+    <!-- Reproductor de música en la sala de puesta de sol -->
+<audio id="audioPuestaSol" controls>
+  <source src="24hs.mp3" type="audio/mpeg">
+</audio>
+<!-- Sprites en secuencia -->
+<img id="spriteSecuencia" src="miracielo.png" alt="Sprite interactivo">
+
+<!-- Bloque de diálogo -->
+<div id="dialogoSprite"></div>
+
+  </div>
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>
